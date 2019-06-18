@@ -9,8 +9,25 @@
             font-size: 50px;
         }
     </style>
+    <script src="jquery.min.js"></script>
 </head>
 <body>
     <h1>欢迎来到几鸡 - 学习助理</h1>   
 </body>
+ <script>
+      $(document).ready(function() {    
+            function jump(count) {    
+                window.setTimeout(function(){    
+                    count--;    
+                    if(count > 0) {    
+                        $('#num').attr('innerHTML', count);    
+                        jump(count);    
+                    } else {    
+                        location.href="login.jsp";    
+                    }    
+                }, 1000);    
+            }    
+            jump(3);    
+        });  
+ </script>
 </html>
