@@ -2,7 +2,7 @@
 @font-face {font-family: "iconfont";
   src: url('../fonts/iconfont.eot'); /* IE9*/
   src: url('../fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/b790412534994586bdaa39c58c40293b.woff') format('woff'),
+
   url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('../fonts/iconfont.svg') format('svg'); /* iOS 4.1- */
 }
