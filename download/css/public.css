@@ -1,0 +1,88 @@
+﻿/* public */
+.fs0 {
+	font-size: 0;
+}
+.fs12 {
+	font-size: 0.12rem;
+}
+.fs14 {
+	font-size: 0.14rem;
+}
+.fs18 {
+	font-size: 0.18rem;
+}
+.fs22 {
+	font-size: 0.22rem;
+}
+.lh31 {
+	line-height: 0.31rem;
+}
+.cblue {
+	color: #2D92E9;
+}
+.c9 {
+	color: #999;
+}
+.c3 {
+	color: #333;
+}
+.tc {
+	text-align: center;
+}
+.w266 {
+	width: 2.66rem;
+}
+.mauto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mt5 {
+	margin-top: 0.05rem;
+}
+.mt18 {
+	margin-top: 0.18rem;
+}
+.mt35 {
+	margin-top: 0.35rem;
+}
+.mt45 {
+	margin-top: 0.45rem;
+}
+.mt95 {
+	margin-top: 0.95rem;
+}
+.ml14 {
+	margin-left: 0.14rem;
+}
+.pt4 {
+	padding-top: 0.04rem;
+}
+.pb4 {
+	padding-bottom: 0.04rem;
+}
+.bbs1 {
+	border-bottom: 1px solid #E8E8E8;
+}
+.pr {
+	position: relative;
+}
+
+::-webkit-input-placeholder {
+　　color:#999;
+	font-size: 0.14rem;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/ee610275ccb74d9db6835337ddc1f480.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
