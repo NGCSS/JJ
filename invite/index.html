@@ -1,0 +1,223 @@
+﻿ <!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<meta name="theme-color" content="#2d79fb">
+<title>几鸡-学习助理</title>
+<link rel="stylesheet" href="css/4cac154b9c0e48ccb472befd3bb23458.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+<body class="bg-primary">
+
+<main>
+<div class="container pt-lg">
+<div class="slice row justify-content-center">
+<div class="col-md-8 col-lg-6">
+<div class="card shadow zindex-100">
+<div class="card-body px-md-5 py-5">
+<div class="text-center mb-5">
+<h6 class="h3">创建一个账户</h6>
+<p class="text-muted mb-0">注册，然后成为鸡友</p>
+</div>
+<div class="form-group">
+<label class="form-control-label">邮箱地址（最重要啦！）</label>
+<div class="input-group input-group-transparent">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="far fa-envelope"></i></span>
+</div>
+<input id="email" type="email" maxlength="32" class="form-control" aria-describedby="basic-addon2" />
+</div>
+</div> <div class="form-group">
+<label class="form-control-label">昵称</label>
+<div class="input-group input-group-transparent">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="far fa-user"></i></span>
+</div>
+<input id="name" type="text" class="form-control" />
+</div>
+</div>
+<div class="form-group mb-4">
+<label class="form-control-label">密码</label>
+<div class="input-group input-group-transparent">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="far fa-key"></i></span>
+</div>
+<input type="password" class="form-control" id="passwd" />
+</div>
+</div>
+<div class="form-group">
+<label class="form-control-label">重复密码</label>
+<div class="input-group input-group-transparent">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="far fa-key"></i></span>
+</div>
+<input type="password" class="form-control" id="repasswd" />
+</div>
+</div>
+<div class="form-group md-4">
+<label class="form-control-label">联系方式（第二种重要啦！）</label>
+<div class="input-group mb-3">
+<input type="text" id="wechat" class="form-control" aria-describedby="basic-addon2" />
+<div class="input-group-append">
+<label class="floating-label" for="imtype"></label>
+<select class="form-control" id="imtype">
+<option disabled="" selected="selected">选择您的联系方式</option>
+<option value="1">微信</option>
+<option value="2">QQ</option>
+<option value="3">Google+</option>
+<option value="4">Telegram</option>
+</select>
+</div>
+</div>
+</div> <div class="my-4">
+<div class="custom-control custom-checkbox">
+<input class="custom-control-input" id="legal" type="checkbox" />
+<label class="custom-control-label" for="legal"> <span>注册即可开始使用几鸡</span> </label>
+</div>
+</div>
+<div class="row align-items-center">
+<div class="col-sm-7">
+<button id="tos" type="submit" disabled="" class="btn btn-primary mb-3 mb-sm-0">注册</button>
+</div>
+<div class="col-sm-5 text-sm-right">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="modal modal-fluid fade" id="tos_modal" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<div class="row justify-content-center">
+<div class="col-lg-8 text-left py-4">
+<h4 class="heading h3">注册 Tos</h4>
+<p class="lead text-muted">
+
+<p>撩妹你用抖音</p>
+<p>打车你用滴滴</p>
+<p>旅行你用携程</p>
+<p>吃饭你用美团</p>
+<p> </p>
+<p>那么我李鹤睿问你：</p>
+ <p>爱国富强你用什么？</p>
+</p>
+<div class="modal-footer">
+<p class="text-right"><button class="btn btn-primary" data-dismiss="modal" type="button" id="cancel">我害羞</button> <button class="btn btn-primary" data-dismiss="modal" id="reg" type="button">用几鸡</button> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> <div class="modal modal-fluid fade" id="result" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center py-4">
+<p class="lead text-muted" id="msg"></p>
+<button type="button" class="btn btn-primary" data-dismiss="modal">我知道了</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> <script src="js/jquery.min.js"></script>
+<script src="js/jquery.boa.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/in-view.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
+<script>
+     $("#legal").click(function () {
+      if($('#legal').is(':checked')) {
+      $("#tos").removeAttr("disabled")
+      }else{
+      $('#tos').attr("disabled",true);
+      }
+      });
+  function getCookie(cname)
+	{
+	  var name = cname + "=";
+	  var ca = document.cookie.split(';');
+	  for(var i=0; i<ca.length; i++)
+	  {
+	    var c = ca[i].trim();
+	    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+	  }
+	  return "";
+	}
+  </script>
+<script>
+    $(document).ready(function(){
+        function register(){
+    	           code = 0;
+           if ((getCookie('code'))!=''){
+           code = getCookie('code');
+          }
+	    			document.getElementById("tos").disabled = true;
+
+            $.ajax({
+                type:"POST",
+                url:"https://jiji.pm/api/registered",
+                dataType:"json",
+                data:{
+                    email: $("#email").val(),
+                    name: $("#name").val(),
+                    passwd: $("#passwd").val(),
+                    repasswd: $("#repasswd").val(),
+                    code:code,
+					          wechat: $("#wechat").val(),					          imtype: $("#imtype").val(),
+					                                              },
+                success:function(data){
+                   
+                    if(data.ret == 1){
+                        $("#result").modal();
+                        $("#msg").html(data.msg);
+                        window.setTimeout("location.href='/signin'", 1200);
+                    }else{
+                        $("#result").modal();
+                        $("#msg").html(data.msg);
+                        setCookie('code','',0);
+                        $("#code").val(getCookie('code'));
+						$("#tos").removeAttr("disabled")
+                      
+                    }
+                },
+                error:function(jqXHR){
+			$("#msg-error").hide(10);
+			$("#msg-error").show(100);
+			$("#msg-error-p").html("发生错误："+jqXHR.status);
+			document.getElementById("tos").disabled = false;
+			                }
+            });
+        }
+        $("html").keydown(function(event){
+            if(event.keyCode==13){
+                $("#tos_modal").modal();
+            }
+        });
+
+		
+		$("#reg").click(function(){
+            register();
+        });
+
+		$("#tos").click(function(){
+			            $("#tos_modal").modal();
+        });
+    })
+</script>
